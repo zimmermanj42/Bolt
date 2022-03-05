@@ -16,15 +16,15 @@ class Node implements IStructure
     /**
      * @var int
      */
-    private $id;
+    protected $id;
     /**
      * @var array
      */
-    private $labels;
+    protected $labels;
     /**
      * @var array
      */
-    private $properties;
+    protected $properties;
 
     /**
      * Node constructor.

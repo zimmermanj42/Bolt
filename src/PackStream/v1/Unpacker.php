@@ -183,7 +183,7 @@ class Unpacker implements IUnpacker
      * @return mixed
      * @throws UnpackException
      */
-    private function unpackSpecificStructure(bool &$result, string $class, ...$methods)
+    protected function unpackSpecificStructure(bool &$result, string $class, ...$methods)
     {
         $output = [];
         foreach ($methods as $method) {

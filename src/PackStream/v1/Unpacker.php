@@ -200,10 +200,10 @@ class Unpacker implements IUnpacker
     /**
      * @param int $marker
      * @param bool $result
-     * @return array
+     * @return mixed
      * @throws UnpackException
      */
-    protected function unpackMap(int $marker, bool &$result = false): array
+    protected function unpackMap(int $marker, bool &$result = false)
     {
         $size = -1;
         if ($marker >> 4 == 0b1010) { //TINY_MAP

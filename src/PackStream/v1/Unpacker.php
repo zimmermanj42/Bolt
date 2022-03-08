@@ -203,7 +203,7 @@ class Unpacker implements IUnpacker
      * @return array
      * @throws UnpackException
      */
-    private function unpackMap(int $marker, bool &$result = false): array
+    protected function unpackMap(int $marker, bool &$result = false): array
     {
         $size = -1;
         if ($marker >> 4 == 0b1010) { //TINY_MAP

@@ -16,23 +16,23 @@ class Relationship implements IStructure
     /**
      * @var int
      */
-    private $id;
+    protected $id;
     /**
      * @var int
      */
-    private $startNodeId;
+    protected $startNodeId;
     /**
      * @var int
      */
-    private $endNodeId;
+    protected $endNodeId;
     /**
      * @var string
      */
-    private $type;
+    protected $type;
     /**
      * @var array
      */
-    private $properties;
+    protected $properties;
 
     /**
      * Relationship constructor.
